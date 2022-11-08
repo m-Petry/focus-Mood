@@ -62,7 +62,6 @@ function nextSong() {
 }
 
 //Volume Slider BG
-
 let volume = document.querySelector("#volume-control");
 volume.addEventListener("change", function (e) {
   audio.volume = e.currentTarget.value / 100;

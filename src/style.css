@@ -16,6 +16,19 @@ body {
   color: antiquewhite;
 }
 
+.lofi-section {
+  height: 25%;
+  margin-top: 35px;
+}
+
+.rainy-section {
+  height: 25%;
+}
+
+.cafe-section {
+  height: 25%;
+}
+
 .music-container {
   background-color: antiquewhite;
   border-radius: 15px;
