@@ -33,16 +33,29 @@
         <div class="img-container">
           <img alt="music-cover" id="cover" />
         </div>
-        <div class="navigation">
+        <div class="navigation play-fow">
           <button id="prev" class="action-btn">
             <i class="fas fa-backward"></i>
           </button>
-          <button id="play" class="action-btn action-btn-big">
+          <button id="play" class="action-btn-big">
             <i class="fas fa-play"></i>
           </button>
           <button id="next" class="action-btn">
             <i class="fas fa-forward"></i>
           </button>
+          <div class="slider_container">
+            <button id="volume" class="volume-btn">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="99"
+              class="volume_slider"
+              onchange="setVolume()"
+            />
+          </div>
         </div>
       </div>
     </section>
