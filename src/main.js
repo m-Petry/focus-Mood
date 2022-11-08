@@ -7,7 +7,6 @@ const progress = document.getElementById("progress");
 const progressContainer = document.getElementById("progress-container");
 const title = document.getElementById("title");
 const cover = document.getElementById("cover");
-
 import { songs } from "./songs";
 // Keep track of song
 let songIndex = 7;
@@ -63,8 +62,12 @@ function nextSong() {
 }
 
 //Volume Slider BG
+
+let volume = document.querySelector("#volume-control");
+volume.addEventListener("change", function (e) {
+  audio.volume = e.currentTarget.value / 100;
+});
 const rangeInputs = document.querySelectorAll('input[type="range"]');
-const numberInput = document.querySelector('input[type="number"]');
 
 function handleInputChange(e) {
   let target = e.target;
@@ -77,14 +80,10 @@ function handleInputChange(e) {
 
   target.style.backgroundSize = ((val - min) * 100) / (max - min) + "% 100%";
 }
-
 rangeInputs.forEach(input => {
   input.addEventListener("input", handleInputChange);
 });
 
-// numberInput.addEventListener("input", handleInputChange);
-
-// Update progress bar
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
