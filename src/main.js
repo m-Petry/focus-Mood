@@ -9,7 +9,7 @@ const title = document.getElementById("title");
 const cover = document.getElementById("cover");
 import { songs } from "./songs";
 // Keep track of song
-let songIndex = 7;
+let songIndex = 9;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
