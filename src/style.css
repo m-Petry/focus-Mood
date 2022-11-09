@@ -16,19 +16,6 @@ body {
   color: antiquewhite;
 }
 
-.lofi-section {
-  height: 25%;
-  margin-top: 35px;
-}
-
-.rainy-section {
-  height: 25%;
-}
-
-.cafe-section {
-  height: 25%;
-}
-
 .music-container {
   background-color: antiquewhite;
   border-radius: 15px;
@@ -213,5 +200,4 @@ h2 {
   margin-top: 50px;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Lato", sans-serif;
 }
